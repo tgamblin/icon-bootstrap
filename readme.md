@@ -83,7 +83,7 @@ spack --color=never -C /user-environment/config find --format '{name}@{version}'
 
 Once we have a list of spack specs to add to the mirror, create the mirror as follows:
 ```
-spack mirror create -D -d $(pwd)/mirror -f /home/bcumming/test/spack-env/spack-packages.txt
+spack mirror create -D -d $(pwd)/mirror --file /home/bcumming/test/spack-env/spack-packages.txt
 ```
 
 Installing from a local repo
